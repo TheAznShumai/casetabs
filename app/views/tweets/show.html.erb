@@ -1,0 +1,9 @@
+<div class="container">
+  <%- @tweets.each do |tweet| %>
+    <div class="row">
+      <%= render partial: 'tweet', locals: { tweet: tweet } %>
+    </div>
+  <% end %>
+</div>
+
+<%= render partial: 'twitter_card' %>
