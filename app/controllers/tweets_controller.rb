@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
   def show
-    binding.pry
+    @tweets = twitter_client.user_timeline(params[:name])
   end
 end
