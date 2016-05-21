@@ -1,0 +1,9 @@
+<div class="tweet">
+  <div class="tweet--user">
+    <img class="tweet--user-avatar" src="<%= tweet.user.profile_image_url.to_s %>" alt="" />
+    <div class="tweet--user-name"><%= tweet.user.screen_name %><span>@<%= tweet.user.name %></span></div>
+  </div>
+  <p class="tweet--body"><%= tweet_inject_hyperlink_popups_for(tweet.full_text) %></p>
+  <div class="tweet--time"><%= tweet.created_at.to_date.strftime('%l:%M %p - %e %b %-d') %></div>
+</div>
+

@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Sans-Serif;
+  background: #c2e59c; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#c2e59c, #64b3f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c2e59c, #64b3f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c2e59c, #64b3f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c2e59c, #64b3f4); /* Standard syntax */
+}
+
+.tweet {
+  margin: 10px auto;
+  border: 1px solid #eee;
+  padding: 25px 50px;
+  border-radius: 5px;
+  max-width: 500px;
+  background: white;
+}
+.tweet--user:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.tweet--user-avatar {
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+}
+.tweet--user-name {
+  font-weight: bold;
+  padding-top: 9px;
+}
+.tweet--user-name span {
+  font-weight: normal;
+  color: #999;
+  font-size: 0.8em;
+  display: block;
+}
+.tweet--body {
+  margin: 20px 0 5px;
+  font-size: 1.5em;
+}
+.tweet--time {
+  font-weight: normal;
+  color: #999;
+  font-size: 0.8em;
+}

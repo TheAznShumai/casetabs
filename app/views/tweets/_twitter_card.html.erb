@@ -1,0 +1,28 @@
+<script id="card__template" type="x-tmpl-mustache">
+  <div class="card">
+    <div class="card__info">
+      <div class="details">
+        <span class="details__text-header">{{ name }}</span>
+        <span class="details__text-subheader">{{ screen_name }}</span>
+      </div>
+      <div class="card__info__section-3">
+        <div class="details-bottom">
+          <span class="details__number">{{ followers_count }}</span>
+          <span class="details__text">followers</span>
+        </div>
+      </div>
+      <div class="card__info__section-3">
+        <div class="details-bottom">
+          <span class="details__number">{{ friends_count }}</span>
+          <span class="details__text">following</span>
+        </div>
+      </div>
+      <div class="card__info__section-3">
+        <div class="details-bottom">
+          <span class="details__number">{{ statuses_count }}</span>
+          <span class="details__text">tweets</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
