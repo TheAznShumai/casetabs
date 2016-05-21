@@ -1,4 +1,14 @@
 <div class="container">
+  <div class="row top-buffer"></div>
+  <div class="container">
+    <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">@</span>
+      <form onSubmit="return tweet_link();">
+        <input type="text" id="url" class="form-control" placeholder="<%= params[:name] %>" aria-describedby="sizing-addon2">
+      </form>
+    </div>
+  </div>
+  <div class="row top-buffer"></div>
   <%- @tweets.each do |tweet| %>
     <div class="row">
       <%= render partial: 'tweet', locals: { tweet: tweet } %>
@@ -7,3 +17,13 @@
 </div>
 
 <%= render partial: 'twitter_card' %>
+
+<script>
+function tweet_link()
+{
+  var url="/tweets/" + document.getElementById("url").value;
+  location.href=url;
+  return false;
+}
+</script>
+
