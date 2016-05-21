@@ -5,6 +5,7 @@ module TweetsHelper
       text = word
       if (word.start_with? '@') && (word.size > 1)
         name = word[1..-1]
+        name.chop! if name.end_with? ':'
         text = link_to(word, tweet_path(URI.encode(name)), class: 'twitter-popup-ajax',
                                                            data: { name: name })
       end
