@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CaseTabs Requirement list
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Requirements (in priority order):
+Host this application on Heroku (free options should be fine)
+Uses the Twitter API
+Does not require a login (Application-only authentication)
+Visiting the home page defaults to a user page with the last 20 tweets from @casetabs
+Any @name in a tweet should link to a user page (can be same format as the home page), also with the last 20 tweets for that user
+Hovering over any @names in tweets will bring up a modal/tooltip giving a description of that user (# tweets, # of followers)
+Cache identical twitter API calls for 5 minutes (first calls don't need to be cached)
